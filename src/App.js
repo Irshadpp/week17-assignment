@@ -1,10 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
+import { StrictMode } from 'react';
+import Counter from "./components/Counter";
+import Input from "./components/input";
 
 const Applayout = () =>{
     return (
-       <Header />
+        <div>
+            <StrictMode>
+            <Counter/>
+            <Input/>
+            </StrictMode>
+        </div>
     )
 }
 
